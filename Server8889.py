@@ -42,7 +42,7 @@ def main():
 	port = 8889
 	print('Listening on localhost:%s' % port)
 	server = HTTPServer(('', port), RequestHandler)
-	CERTFILE = '/usr/local/lib/node_modules/homebridge-samsung-aircon-8888/ac14k_m.pem'
+	CERTFILE = '/app/ac14k_m.pem'
 	if (len(sys.argv) > 1):
 		CERTFILE = sys.argv[1]
 	print("certfile: ", CERTFILE)
